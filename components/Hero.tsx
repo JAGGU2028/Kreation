@@ -26,12 +26,16 @@ const Hero: React.FC = () => {
         <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" className="absolute inset-0">
             <defs>
                 <radialGradient id="shape-gradient-1" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.15" />
+                    <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.3" />
                     <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient id="shape-gradient-2" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="rgba(102, 51, 153, 0.15)" stopOpacity="0.1" />
-                    <stop offset="100%" stopColor="rgba(102, 51, 153, 0.15)" stopOpacity="0" />
+                    <stop offset="0%" stopColor="rgb(124, 58, 237)" stopOpacity="0.225" />
+                    <stop offset="100%" stopColor="rgb(124, 58, 237)" stopOpacity="0" />
+                </radialGradient>
+                <radialGradient id="shape-gradient-3" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="rgb(20, 184, 166)" stopOpacity="0.225" />
+                    <stop offset="100%" stopColor="rgb(20, 184, 166)" stopOpacity="0" />
                 </radialGradient>
             </defs>
             
@@ -62,6 +66,15 @@ const Hero: React.FC = () => {
                 fill="url(#shape-gradient-2)"
                 className="animate-shape-float will-change-transform"
                 style={{ animationDelay: '5s', animationDuration: '60s' }}
+            />
+
+            <circle 
+                cx="5vw" 
+                cy="85vh" 
+                r="30vmax" 
+                fill="url(#shape-gradient-3)"
+                className="animate-shape-float will-change-transform"
+                style={{ animationDelay: '2.5s', animationDuration: '55s' }}
             />
         </svg>
       </div>
